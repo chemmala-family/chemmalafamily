@@ -1,0 +1,74 @@
+/* General styling for a responsive layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+    font-size: clamp(24px, 5vw, 40px); /* Responsive font size */
+}
+
+img {
+    height: clamp(100px, 20vw, 150px); /* Responsive image height */
+    margin: 20px auto;
+    display: block; /* Center the image */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: clamp(24px, 5vw, 40px); /* Responsive font size */
+}
+
+p {
+    margin: 20px auto;
+    max-width: 90%;
+    text-align: center;
+    font-size: clamp(16px, 4vw, 20px); /* Responsive font size */
+    line-height: 1.5;
+}
+#para {
+    background-color: palevioletred;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    header {
+        font-size: 6vw; /* Smaller font size for mobile */
+        margin-top: 15px;
+    }
+
+    img {
+        height: 15vw; /* Slightly smaller image for mobile */
+    }
+
+    h1 {
+        font-size: 8vw;
+        margin-top: 15px;
+    }
+
+    p {
+        font-size: 5vw;
+        padding: 10px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    header {
+        font-size: 10vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 6vw;
+        line-height: 1.4;
+    }
+}

@@ -1,0 +1,54 @@
+header {
+    text-align: center;
+    font-size: 45px;
+    background-color: bisque;
+}
+#fathone {
+    position: absolute;
+    left: 670px;
+    background-color: orange;
+    text-align: center;
+
+    width: 200px;
+    border: orange 2px solid;
+    border-radius: 20px;
+    font-size: 40px;
+}
+#fathtwo {
+    position: absolute;
+    left: 670px;
+    top: 230px;
+    background-color: orange;
+    text-align: center;
+    width: 200px;
+    border: orange 2px solid;
+    border-radius: 20px;
+    font-size: 15px;
+}
+#faththree {
+    position: absolute;
+    left: 670px;
+    top: 340px;
+    background-color: orange;
+    text-align: center;
+    width: 200px;
+    border: orange 2px solid;
+    border-radius: 20px;
+    font-size: 15px;
+}
+#fathfour {
+    position: absolute;
+    left: 670px;
+    top: 440px;
+    background-color: orange;
+    text-align: center;
+    width: 200px;
+    border: orange 2px solid;
+    border-radius: 20px;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}

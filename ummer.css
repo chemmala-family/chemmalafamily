@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Neutral background for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Profile Container */
+#divv {
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 20px;
+    max-width: 400px; /* Restrict maximum width */
+    width: 90%; /* Make it flexible for smaller screens */
+    text-align: center;
+    background-color: rgb(74, 168, 214);
+    transition: background-color 0.3s ease, border 0.3s ease;
+    margin-bottom: 20px; /* Space below the container */
+}
+
+/* Profile Heading */
+#Profileone {
+    margin-top: 0;
+    font-size: 30px; /* Responsive font size */
+    color: white;
+}
+
+/* Profile Name and Details */
+#ummer {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Image */
+img {
+    width: 100%; /* Responsive */
+    max-width: 300px; /* Limit max width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0;
+    border-radius: 15px; /* Add subtle rounding for style */
+}
+
+/* "Show More" Link */
+#ummerde {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-size: 1rem; /* Responsive font size */
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+#ummerde:hover {
+    color: rgb(200, 0, 0); /* Subtle hover effect */
+}
+
+/* Back Button */
+#Back {
+    text-decoration: none;
+    display: block;
+    margin: 20px auto; /* Center the button horizontally */
+    border: 2px solid orange;
+    color: white;
+    background-color: orange;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    max-width: 200px; /* Restrict width for smaller screens */
+    width: 90%;
+}
+#sadind {
+    text-decoration: none;
+    border: orange 2px solid;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+#rizad {
+    text-decoration: none;
+    border: orange 2px solid;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+a:hover {
+    background-color: rgb(116, 182, 41);
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 768px) {
+    /* Profile Heading and Text */
+    #Profileone {
+        font-size: 30px;
+    }
+
+    #ummer {
+        font-size: 1.1rem;
+    }
+
+    #ummerde {
+        font-size: 0.9rem;
+    }
+
+    #Back {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #divv {
+        padding: 15px;
+    }
+
+    #Profileone {
+        font-size: 30px;
+    }
+
+    #ummer {
+        font-size: 1rem;
+    }
+
+    #ummerde {
+        font-size: 25px;
+    }
+
+    #Back {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}

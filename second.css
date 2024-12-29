@@ -1,0 +1,124 @@
+/* General styling for a responsive layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header container */
+#head {
+    background-color: cadetblue;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically on small screens */
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* Header text inside #head */
+#head div header {
+    color: white;
+    font-size: clamp(18px, 6vw, 28px); /* Responsive font size */
+    margin: 0;
+}
+
+/* Subheading container within #head */
+#shamsu {
+    font-size: clamp(14px, 5vw, 18px);
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+/* Profile Image */
+img {
+    height: clamp(40px, 20vw, 60px);
+    margin: 10px 0;
+    position: static; /* Removes absolute positioning for better responsiveness */
+}
+
+/* Profile section */
+#profile {
+    background-color: cadetblue;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(140, 5, 5);
+}
+
+/* Profile header text */
+#pro {
+    font-size: clamp(16px, 5vw, 22px);
+    margin: 8px 0;
+}
+
+/* Age labels */
+#agee,
+#agge {
+    font-size: clamp(14px, 5vw, 18px);
+    color: white;
+    margin: 8px 0;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: rgb(11, 47, 180);
+    margin: 5px 0;
+}
+
+/* Specific adjustments for smaller screens */
+@media (max-width: 600px) {
+    /* Stacks elements in #head */
+    #head {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    /* Aligns elements within the #head div */
+    #head div header,
+    #shamsu {
+        text-align: left;
+        margin: 5px 0;
+    }
+
+    /* Adjusts image positioning on mobile */
+    img {
+        position: static;
+        margin: 0 auto 10px;
+    }
+
+    /* Centers content in profile section */
+    #profile {
+        padding: 15px;
+    }
+
+    /* Centers text and stacks within profile */
+    #pro,
+    #agge {
+        text-align: center;
+        margin: 5px 0;
+    }
+    #shamsudheen {
+        text-align: center;
+        position: relative;
+        top: -45px;
+    }
+    #agee {
+        text-align: left;
+    }
+    #agge {
+        text-align: center;
+        position: relative;
+        top: -30px;
+    }
+}
